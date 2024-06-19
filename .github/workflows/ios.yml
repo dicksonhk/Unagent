@@ -11,6 +11,9 @@ jobs:
     runs-on: macos-latest
 
     steps:
+      - run: |
+          uname -a
+          uname -p
       - name: Checkout
         uses: actions/checkout@v4
       - name: Set Default Scheme
